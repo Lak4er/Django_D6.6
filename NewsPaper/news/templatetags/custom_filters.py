@@ -15,7 +15,7 @@ stop_words = [
 def censor(value):
 
     for sw in stop_words:
-        value = value.lower().replace(sw.lower(), '*')
+        value = value.replace(sw, '*')
     return value
 
 
